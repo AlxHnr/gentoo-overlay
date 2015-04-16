@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<repositories version="1.0">
+	<repo quality="experimental" status="unofficial">
+		<name>alxhnr</name>
+		<description lang="en">AlxHnr's custom overlay</description>
+		<homepage>https://github.com/AlxHnr/gentoo-overlay</homepage>
+		<owner type="person">
+			<email>alxhnr@nudelpost.de</email>
+		</owner>
+		<source type="git">https://github.com/AlxHnr/gentoo-overlay.git</source>
+	</repo>
+</repositories>
