@@ -5,7 +5,7 @@
 EAPI=5
 inherit git-r3
 
-DESCRIPTION="A makefile generator for CHICKEN projekts"
+DESCRIPTION="A makefile generator for CHICKEN projects"
 HOMEPAGE="https://github.com/AlxHnr/chicken-builder"
 EGIT_REPO_URI="https://github.com/AlxHnr/chicken-builder.git"
 

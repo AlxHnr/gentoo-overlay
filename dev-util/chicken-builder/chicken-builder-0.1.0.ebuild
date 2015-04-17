@@ -4,7 +4,7 @@
 
 EAPI=5
 
-DESCRIPTION="A makefile generator for CHICKEN projekts"
+DESCRIPTION="A makefile generator for CHICKEN projects"
 HOMEPAGE="https://github.com/AlxHnr/chicken-builder"
 SRC_URI="https://github.com/AlxHnr/chicken-builder/archive/v${PVR}.tar.gz -> ${P}.tar.gz"
 
