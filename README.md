@@ -1,7 +1,7 @@
 This is my personal Gentoo overlay. It contains the following packages:
 
 * [alx-tools](https://github.com/AlxHnr/alx-tools) - Scripts i have written
-for maintaining my Gentoo system.
+for maintaining my Gentoo system
 * [dlaunch](https://github.com/AlxHnr/Dlaunch) - A learning dmenu wrapper
 * [chicken-builder](https://github.com/AlxHnr/chicken-builder) - Makefile
 generator for CHICKEN Scheme
