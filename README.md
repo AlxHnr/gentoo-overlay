@@ -1,6 +1,24 @@
-This is my personal Gentoo overlay. You can install it using layman:
+This is my personal Gentoo overlay. It can be installed it by adding this
+to your repos.conf file:
+
+```
+[alxhnr]
+sync-type = git
+sync-uri = https://github.com/AlxHnr/gentoo-overlay
+location = /usr/local/portage/alxhnr
+auto-sync = yes
+```
+
+Layman can also be used to install this overlay:
 
 `sudo layman -o https://raw.githubusercontent.com/AlxHnr/gentoo-overlay/master/repository.xml -f -a alxhnr`
+
+You may want to unmask all packages in this overlay. To do so, simply add
+the following line to your keywords file:
+
+```
+*/*::alxhnr
+```
 
 It contains the following packages:
 
