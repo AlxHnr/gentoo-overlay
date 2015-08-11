@@ -25,7 +25,13 @@ RDEPEND="sys-apps/portage
 			app-arch/tar )
 		sys-apps/busybox[make-symlinks] )"
 
+IUSE="+update-system +build-kernel
+	+remove-kernel-residue +ppack
+	+print-gentoo-splash"
+
 src_install() {
 	exeinto /usr/bin
-	find . -maxdepth 1 -executable -type f -exec doexe {} ';'
+	for program in $IUSE; do
+		use "${program#+}" && doexe "${program#+}"
+	done
 }
