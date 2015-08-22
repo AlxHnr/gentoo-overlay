@@ -29,6 +29,8 @@ IUSE="+update-system +build-kernel
 	+remove-kernel-residue +ppack
 	+print-gentoo-splash"
 
+REQUIRED_USE="update-system? ( build-kernel remove-kernel-residue )"
+
 src_install() {
 	exeinto /usr/bin
 	for program in $IUSE; do
