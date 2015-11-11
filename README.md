@@ -5,6 +5,8 @@ for maintaining my Gentoo system
 * [dlaunch](https://github.com/AlxHnr/Dlaunch) - A learning dmenu wrapper
 * [chicken-builder](https://github.com/AlxHnr/chicken-builder) - Makefile
 generator for CHICKEN Scheme
+* [nano-backup](https://github.com/AlxHnr/nano-backup) - A minimal backup
+tool for POSIX systems
 
 This overlay can be installed via repos.conf:
 
