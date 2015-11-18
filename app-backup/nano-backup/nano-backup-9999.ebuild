@@ -14,8 +14,7 @@ SLOT="0"
 
 IUSE="test"
 RDEPEND="dev-libs/openssl:0"
-DEPEND="${RDEPEND} virtual/pkgconfig
-	test? ( sys-libs/ncurses )"
+DEPEND="${RDEPEND} virtual/pkgconfig"
 
 src_install() {
 	exeinto /usr/bin
