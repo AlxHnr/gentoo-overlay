@@ -14,8 +14,7 @@ This overlay can be installed via repos.conf:
 [alxhnr]
 sync-type = git
 sync-uri = https://github.com/AlxHnr/gentoo-overlay
-location = /usr/local/portage/alxhnr
-auto-sync = yes
+location = /usr/local/overlays/alxhnr
 ```
 
 To unmask all packages in this overlay, you must add the following line to
