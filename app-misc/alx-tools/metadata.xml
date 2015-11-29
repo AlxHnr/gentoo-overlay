@@ -15,5 +15,7 @@
 		<flag name="ppack">Script for creating project arcives.</flag>
 		<flag name="print-gentoo-splash">Script for printing the gentoo
 			logo.</flag>
+		<flag name="sync-overlay-with-projects">Script for rotating ebuilds
+			in overlays to match the latest git version tags.</flag>
 	</use>
 </pkgmetadata>

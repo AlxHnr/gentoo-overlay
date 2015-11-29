@@ -16,6 +16,7 @@ RDEPEND="sys-apps/portage app-portage/gentoolkit"
 
 IUSE="+update-system +build-kernel
 	+remove-kernel-residue +ppack
+	+sync-overlay-with-projects
 	+print-gentoo-splash"
 
 REQUIRED_USE="update-system? ( build-kernel remove-kernel-residue )"
