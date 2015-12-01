@@ -6,8 +6,8 @@ EAPI=5
 inherit git-r3
 
 DESCRIPTION="A simple, learning dmenu wrapper"
-HOMEPAGE="https://github.com/AlxHnr/Dlaunch"
-EGIT_REPO_URI="https://github.com/AlxHnr/Dlaunch.git"
+HOMEPAGE="https://github.com/AlxHnr/dlaunch"
+EGIT_REPO_URI="https://github.com/AlxHnr/dlaunch.git"
 
 LICENSE="ZLIB"
 SLOT="0"

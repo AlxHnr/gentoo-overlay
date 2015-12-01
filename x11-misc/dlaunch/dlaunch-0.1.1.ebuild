@@ -5,9 +5,9 @@
 EAPI=5
 
 DESCRIPTION="A simple, learning dmenu wrapper"
-HOMEPAGE="https://github.com/AlxHnr/Dlaunch"
-SRC_URI="https://github.com/AlxHnr/Dlaunch/archive/v${PVR}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/Dlaunch-${PVR}"
+HOMEPAGE="https://github.com/AlxHnr/dlaunch"
+SRC_URI="https://github.com/AlxHnr/dlaunch/archive/v${PVR}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/dlaunch-${PVR}"
 
 LICENSE="ZLIB"
 SLOT="0"
