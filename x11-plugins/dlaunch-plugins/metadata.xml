@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>alxhnr@nudelpost.de</email>
+		<name>Alexander Heinrich</name>
+	</maintainer>
+	<use>
+		<flag name="command-history">Run shell commands and remember
+			them.</flag>
+		<flag name="exec-path">Run programs in $PATH.</flag>
+		<flag name="open-home-files">Search and open files in your home
+			directory.</flag>
+		<flag name="user-cmd">Define custom commands and aliases.</flag>
+	</use>
+</pkgmetadata>
