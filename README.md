@@ -7,6 +7,8 @@ for maintaining my Gentoo system
 plugins for dlaunch
 * [chicken-builder](https://github.com/AlxHnr/chicken-builder) - Makefile
 generator for CHICKEN Scheme
+* [nano-backup](https://github.com/AlxHnr/nano-backup) - A minimal backup
+tool im working on
 
 This overlay can be installed via repos.conf:
 
