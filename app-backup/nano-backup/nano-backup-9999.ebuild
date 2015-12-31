@@ -12,11 +12,18 @@ EGIT_REPO_URI="https://github.com/AlxHnr/nano-backup"
 LICENSE="ZLIB"
 SLOT="0"
 
-IUSE="test"
+IUSE="doc test"
 RDEPEND="dev-libs/openssl:0"
-DEPEND="${RDEPEND} virtual/pkgconfig"
+DEPEND="${RDEPEND} virtual/pkgconfig
+	doc? ( app-doc/doxygen )"
+
+src_compile() {
+	emake
+	use doc && doxygen
+}
 
 src_install() {
 	exeinto /usr/bin
 	doexe build/nb
+	use doc && dohtml -r doc/html/
 }
