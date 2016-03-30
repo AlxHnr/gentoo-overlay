@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -19,7 +19,13 @@ IUSE="+update-system +build-kernel
 	+sync-overlay-with-projects
 	+print-gentoo-splash"
 
-REQUIRED_USE="update-system? ( build-kernel remove-kernel-residue )"
+src_prepare() {
+	use "build-kernel" ||
+		sed -i '/^build-kernel/d' update-system
+
+	use "remove-kernel-residue" ||
+		sed -i '/^remove-kernel-residue$/d' update-system
+}
 
 src_install() {
 	exeinto /usr/bin
