@@ -7,14 +7,16 @@
 	</maintainer>
 	<use>
 		<flag name="update-system">Script for performing system
-			uptates.</flag>
+			updates.</flag>
 		<flag name="build-kernel">Script for building and updating
 			kernels.</flag>
 		<flag name="remove-kernel-residue">Script for removing unneeded
 			kernel files.</flag>
-		<flag name="ppack">Script for creating project arcives.</flag>
+		<flag name="ppack">Script for creating project archives.</flag>
 		<flag name="print-gentoo-splash">Script for printing the gentoo
 			logo.</flag>
+		<flag name="nb-sync">Script for synchronizing nano-backup
+			repositories.</flag>
 		<flag name="sync-overlay-with-projects">Script for rotating ebuilds
 			in overlays to match the latest git version tags.</flag>
 	</use>
