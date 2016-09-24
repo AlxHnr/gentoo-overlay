@@ -14,22 +14,11 @@ SLOT="0"
 
 RDEPEND="sys-apps/portage app-portage/gentoolkit"
 
-IUSE="+update-system +build-kernel
-	+remove-kernel-residue +ppack
-	+sync-overlay-with-projects
-	+nb-sync +print-gentoo-splash"
-
-src_prepare() {
-	use "build-kernel" ||
-		sed -i '/^build-kernel/d' update-system
-
-	use "remove-kernel-residue" ||
-		sed -i '/^remove-kernel-residue$/d' update-system
-}
-
 src_install() {
 	exeinto /usr/bin
-	for program in $IUSE; do
-		use "${program#+}" && doexe "${program#+}"
+	for file in *; do
+		test "$file" = "LICENSE"   && continue
+		test "$file" = "README.md" && continue
+		doexe "$file"
 	done
 }
