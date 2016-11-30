@@ -3,12 +3,12 @@
 # $Id$
 
 EAPI=5
-inherit git-r3
 
 DESCRIPTION="A minimal backup tool for POSIX systems"
 HOMEPAGE="https://github.com/AlxHnr/nano-backup"
-EGIT_REPO_URI="https://github.com/AlxHnr/nano-backup"
+SRC_URI="https://github.com/AlxHnr/nano-backup/archive/v${PVR}.tar.gz -> ${P}.tar.gz"
 
+KEYWORDS="~amd64"
 LICENSE="ZLIB"
 SLOT="0"
 
