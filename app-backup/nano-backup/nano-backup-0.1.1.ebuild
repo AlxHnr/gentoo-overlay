@@ -1,15 +1,15 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
 EAPI=5
 
-DESCRIPTION="A minimal backup tool for POSIX systems"
+DESCRIPTION="A precise and minimal backup tool"
 HOMEPAGE="https://github.com/AlxHnr/nano-backup"
 SRC_URI="https://github.com/AlxHnr/nano-backup/archive/v${PVR}.tar.gz -> ${P}.tar.gz"
 
 KEYWORDS="~amd64"
-LICENSE="ZLIB"
+LICENSE="MIT"
 SLOT="0"
 
 IUSE="doc static test"
@@ -27,5 +27,6 @@ src_compile() {
 src_install() {
 	exeinto /usr/bin
 	doexe build/nb
-	use doc && dohtml -r doc/html/
+	doman nb.1
+	use doc && dohtml -r build/html/
 }
