@@ -1,7 +1,5 @@
 This is my personal Gentoo overlay. It contains the following packages:
 
-* [alx-tools](https://github.com/AlxHnr/alx-tools) - Scripts i have written
-for maintaining my Gentoo system
 * [dlaunch](https://github.com/AlxHnr/dlaunch) - A learning dmenu wrapper
 * [dlaunch-plugins](https://github.com/AlxHnr/dlaunch-plugins) - Various
 plugins for dlaunch
