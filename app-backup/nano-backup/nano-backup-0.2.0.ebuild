@@ -6,17 +6,14 @@ EAPI=5
 
 DESCRIPTION="A precise and minimal backup tool"
 HOMEPAGE="https://github.com/AlxHnr/nano-backup"
-SRC_URI="https://github.com/AlxHnr/nano-backup/archive/v${PVR}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/AlxHnr/nano-backup/releases/download/v${PV}/${P}.tar.xz"
 
 KEYWORDS="~amd64"
 LICENSE="MIT"
 SLOT="0"
 
 IUSE="doc static test"
-RDEPEND="dev-libs/openssl:0"
-DEPEND="${RDEPEND} virtual/pkgconfig
-	static? ( dev-libs/openssl[static-libs] )
-	doc? ( app-doc/doxygen )"
+DEPEND="doc? ( app-doc/doxygen )"
 
 src_compile() {
 	use static && LDFLAGS+=" -static"
